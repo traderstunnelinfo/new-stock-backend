@@ -13,8 +13,6 @@ exports.sendEmail = (mailTo, subject, message, req, res, otp) => {
       pass: 'ogansuqlqpedkvpv',
     },
   });
-  console.log("process.env.EMAIL:", process.env.EMAIL);
-  console.log("process.env.EMAIL_PASS:", process.env.EMAIL_PASS);
 
   const mailOptions = {
     from: process.env.EMAIL,
